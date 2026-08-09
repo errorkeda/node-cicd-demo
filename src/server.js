@@ -19,6 +19,10 @@ app.get("/health", (req, res) => {
   });
 });
 
+app.get('/hello', (req, res) => {
+  res.json({ message: 'Hello CI/CD!' });
+});
+
 const PORT = process.env.PORT || 5000;
 
 app.listen(PORT, () => {
