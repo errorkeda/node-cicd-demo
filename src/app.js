@@ -20,7 +20,7 @@ app.get("/health", (req, res) => {
 });
 
 // Intentionally keeping your current code for testing
-get("/hello", (req, res) => {
+app.get("/hello", (req, res) => {
   res.json({
     message: "Hello CI/CD! abhishek kumar",
   });
